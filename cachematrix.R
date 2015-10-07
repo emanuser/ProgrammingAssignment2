@@ -8,11 +8,11 @@ makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
   reset_matrix <- function(y){
     x <<- y
-    m <<- solve(x)
+    m <<- (x)
   }
   retrn_matrix <- function() x 
   solve_matrix <- function() m <<- solve(x)
-  solve_matrix()
+  #solve_matrix()
   get_inverse <- function() m 
   list(retrn_matrix = retrn_matrix, reset_matrix = reset_matrix,
        solve_matrix = solve_matrix,
