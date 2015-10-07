@@ -8,7 +8,7 @@ makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
   reset_matrix <- function(y){
     x <<- y
-    m <<- (x)
+    m <<-  NULL
   }
   retrn_matrix <- function() x 
   solve_matrix <- function() m <<- solve(x)
